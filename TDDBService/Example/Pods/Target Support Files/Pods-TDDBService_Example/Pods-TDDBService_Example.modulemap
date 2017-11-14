@@ -1,0 +1,6 @@
+framework module Pods_TDDBService_Example {
+  umbrella header "Pods-TDDBService_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
