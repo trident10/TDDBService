@@ -2,11 +2,12 @@
 //  ViewController.swift
 //  TDDBService
 //
-//  Created by trident10 on 11/14/2017.
+//  Created by trident10 on 11/16/2017.
 //  Copyright (c) 2017 trident10. All rights reserved.
 //
 
 import UIKit
+import TDDBService
 
 class ViewController: UIViewController {
 
@@ -22,3 +23,14 @@ class ViewController: UIViewController {
 
 }
 
+
+class Test: DBServiceAble{
+    func apiClient() -> DBServiceApi {
+        return DBServiceApiUserDefaults()
+    }
+    
+    func entityType() -> DBEntity {
+        return DBEntity(name: "Test")
+    }
+    
+}
