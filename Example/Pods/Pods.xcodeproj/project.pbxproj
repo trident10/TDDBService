@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		06B595287FC759AE6807AEA72E93F8F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		077DA71178FDC13B08487C56AB7D4D8E /* DBServiceApi+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372E00AB1C181A51118757341D97EA02 /* DBServiceApi+UserDefaults.swift */; };
+		077DA71178FDC13B08487C56AB7D4D8E /* TDDBServiceApi+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372E00AB1C181A51118757341D97EA02 /* TDDBServiceApi+UserDefaults.swift */; };
 		1B48A9F8C84FD12E891F9ACDDF9DD76A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		2941E45C1B67B60831BFDC31FB346531 /* Pods-TDDBService_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ABA7F3DB974D4598BA5F07397533B3 /* Pods-TDDBService_Example-dummy.m */; };
 		3E7FF8108BAA69B7F65A3CE894F24D26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		51477A4986E05FD6E9C374D8FBABEE78 /* Pods-TDDBService_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36260D83F5C5AE66F0653A8BB58E763C /* Pods-TDDBService_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64EF4CE00641EDF6DB7D88E0C7401504 /* TDDBService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29EC6C88CAC68D713012E974CEC7864A /* TDDBService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		994021893FFCC05AC4413C62B8DCA051 /* DBServiceAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E909C64574F7D7E8D88E8F5EFD0F46 /* DBServiceAble.swift */; };
+		994021893FFCC05AC4413C62B8DCA051 /* TDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E909C64574F7D7E8D88E8F5EFD0F46 /* TDBService.swift */; };
 		9DBE11DFA30A18BA59A5E03013BD6175 /* Pods-TDDBService_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 736CD901931641EC6C3B8A8E852B9ACC /* Pods-TDDBService_Tests-dummy.m */; };
-		A09321F628534B5C641B4538FFCBEA05 /* DBServiceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD7778F53857C2693C4768BA542389 /* DBServiceConfigurator.swift */; };
+		A09321F628534B5C641B4538FFCBEA05 /* TDDBServiceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD7778F53857C2693C4768BA542389 /* TDDBServiceConfigurator.swift */; };
 		AD73DC267ED06518C336125326EE7813 /* Pods-TDDBService_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DADE89D6206095CCEF30E1E0B01BD8C /* Pods-TDDBService_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA3734D8BCABC45AC520010706E3E3A5 /* DBServiceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7909771C66BF1B8651701E3F5F84FA /* DBServiceDataModel.swift */; };
+		BA3734D8BCABC45AC520010706E3E3A5 /* TDDBServiceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7909771C66BF1B8651701E3F5F84FA /* TDDBServiceDataModel.swift */; };
 		D67FF89A865B4FEB635C2B52D804083B /* TDDBService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B3D4E4EC8B20AB17FDEE48337FF250 /* TDDBService-dummy.m */; };
 		F46456BEEC14820837CFE042D79D7BCE /* TDResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63782A56C47369A32DAC7B66CA63A1F0 /* TDResult.swift */; };
-		F65A2DBD73ACED2ECCF0B6A53BFBEB4F /* DBServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E05243F404BEDC04D28F0B9A0A709C /* DBServiceApi.swift */; };
+		F65A2DBD73ACED2ECCF0B6A53BFBEB4F /* TDDBServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E05243F404BEDC04D28F0B9A0A709C /* TDDBServiceApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,35 +40,35 @@
 		29EC6C88CAC68D713012E974CEC7864A /* TDDBService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TDDBService-umbrella.h"; sourceTree = "<group>"; };
 		2B576790EBCB0383A6B9EF6452D18ABC /* Pods-TDDBService_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TDDBService_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2D024ACF72C939AB285A493F3C7C66ED /* Pods-TDDBService_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TDDBService_Example-resources.sh"; sourceTree = "<group>"; };
-		2E724DF488CAEAFBDCC3F1D763E917D4 /* Pods-TDDBService_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TDDBService_Tests.modulemap"; sourceTree = "<group>"; };
+		2E724DF488CAEAFBDCC3F1D763E917D4 /* Pods-TDDBService_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TDDBService_Tests.modulemap"; sourceTree = "<group>"; };
 		36260D83F5C5AE66F0653A8BB58E763C /* Pods-TDDBService_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TDDBService_Example-umbrella.h"; sourceTree = "<group>"; };
-		372E00AB1C181A51118757341D97EA02 /* DBServiceApi+UserDefaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DBServiceApi+UserDefaults.swift"; path = "TDDBService/Classes/DBServiceApi+UserDefaults.swift"; sourceTree = "<group>"; };
+		372E00AB1C181A51118757341D97EA02 /* TDDBServiceApi+UserDefaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TDDBServiceApi+UserDefaults.swift"; path = "TDDBService/Classes/TDDBServiceApi+UserDefaults.swift"; sourceTree = "<group>"; };
 		40B3D4E4EC8B20AB17FDEE48337FF250 /* TDDBService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TDDBService-dummy.m"; sourceTree = "<group>"; };
 		4BF21BF376F6E5A1E79E2A4FF7CC2F56 /* Pods-TDDBService_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TDDBService_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		59EFAF9220C060FFD635FF9B6353A85B /* Pods-TDDBService_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TDDBService_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		63782A56C47369A32DAC7B66CA63A1F0 /* TDResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TDResult.swift; path = TDDBService/Classes/TDResult.swift; sourceTree = "<group>"; };
-		65BD7778F53857C2693C4768BA542389 /* DBServiceConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DBServiceConfigurator.swift; path = TDDBService/Classes/DBServiceConfigurator.swift; sourceTree = "<group>"; };
+		65BD7778F53857C2693C4768BA542389 /* TDDBServiceConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TDDBServiceConfigurator.swift; path = TDDBService/Classes/TDDBServiceConfigurator.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6715261132D03B0790589B64522F628F /* TDDBService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TDDBService.xcconfig; sourceTree = "<group>"; };
 		6DADE89D6206095CCEF30E1E0B01BD8C /* Pods-TDDBService_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TDDBService_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6DF1342C4B8BC36519135E53569D414B /* Pods-TDDBService_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TDDBService_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6F7909771C66BF1B8651701E3F5F84FA /* DBServiceDataModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DBServiceDataModel.swift; path = TDDBService/Classes/DBServiceDataModel.swift; sourceTree = "<group>"; };
-		70CC8922A2B63621326158FCAAA9634F /* Pods-TDDBService_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TDDBService_Example.modulemap"; sourceTree = "<group>"; };
+		6F7909771C66BF1B8651701E3F5F84FA /* TDDBServiceDataModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TDDBServiceDataModel.swift; path = TDDBService/Classes/TDDBServiceDataModel.swift; sourceTree = "<group>"; };
+		70CC8922A2B63621326158FCAAA9634F /* Pods-TDDBService_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TDDBService_Example.modulemap"; sourceTree = "<group>"; };
 		736CD901931641EC6C3B8A8E852B9ACC /* Pods-TDDBService_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TDDBService_Tests-dummy.m"; sourceTree = "<group>"; };
-		768B2B418E4714F2D3287A103DC3C0CC /* TDDBService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TDDBService.framework; path = TDDBService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		768B2B418E4714F2D3287A103DC3C0CC /* TDDBService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDDBService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		867A49B754AB7D6FC8B7F32F97FED543 /* Pods-TDDBService_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TDDBService_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8DDCC4F2FAF83678133D152B4FD77B97 /* Pods_TDDBService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TDDBService_Tests.framework; path = "Pods-TDDBService_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		90E909C64574F7D7E8D88E8F5EFD0F46 /* DBServiceAble.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DBServiceAble.swift; path = TDDBService/Classes/DBServiceAble.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8DDCC4F2FAF83678133D152B4FD77B97 /* Pods_TDDBService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDDBService_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E909C64574F7D7E8D88E8F5EFD0F46 /* TDBService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TDBService.swift; path = TDDBService/Classes/TDBService.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AD90E8CDE592CE20444336CA889AAD32 /* Pods-TDDBService_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TDDBService_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D2EFF02538148F9113F05E0693514015 /* Pods-TDDBService_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TDDBService_Tests-resources.sh"; sourceTree = "<group>"; };
-		D4F186AC25C7C41CF364CDEF391CEE55 /* Pods_TDDBService_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TDDBService_Example.framework; path = "Pods-TDDBService_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F186AC25C7C41CF364CDEF391CEE55 /* Pods_TDDBService_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDDBService_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01EF0E15F96CF8317D00AA6301B317D /* Pods-TDDBService_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TDDBService_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E751251D72467070A2D0CA4A0A8FB2B7 /* Pods-TDDBService_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TDDBService_Example-frameworks.sh"; sourceTree = "<group>"; };
-		EDF9D1A5325E1E9650354F4D4F6F13A7 /* TDDBService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TDDBService.modulemap; sourceTree = "<group>"; };
+		EDF9D1A5325E1E9650354F4D4F6F13A7 /* TDDBService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TDDBService.modulemap; sourceTree = "<group>"; };
 		F2ABA7F3DB974D4598BA5F07397533B3 /* Pods-TDDBService_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TDDBService_Example-dummy.m"; sourceTree = "<group>"; };
 		F5FADCD57FF7F1D6F2496CAD721025BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9E05243F404BEDC04D28F0B9A0A709C /* DBServiceApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DBServiceApi.swift; path = TDDBService/Classes/DBServiceApi.swift; sourceTree = "<group>"; };
+		F9E05243F404BEDC04D28F0B9A0A709C /* TDDBServiceApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TDDBServiceApi.swift; path = TDDBService/Classes/TDDBServiceApi.swift; sourceTree = "<group>"; };
 		FAFF364BBCCAE471E71A311163063F38 /* Pods-TDDBService_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TDDBService_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FBF49E1E95427B13AD8429D771AD43AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDADD940CAA514D3C5AF914CA643C011 /* TDDBService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TDDBService-prefix.pch"; sourceTree = "<group>"; };
@@ -143,11 +143,11 @@
 		81EE6158D909C1D8CC1E6F2F999ACF19 /* TDDBService */ = {
 			isa = PBXGroup;
 			children = (
-				90E909C64574F7D7E8D88E8F5EFD0F46 /* DBServiceAble.swift */,
-				F9E05243F404BEDC04D28F0B9A0A709C /* DBServiceApi.swift */,
-				372E00AB1C181A51118757341D97EA02 /* DBServiceApi+UserDefaults.swift */,
-				65BD7778F53857C2693C4768BA542389 /* DBServiceConfigurator.swift */,
-				6F7909771C66BF1B8651701E3F5F84FA /* DBServiceDataModel.swift */,
+				90E909C64574F7D7E8D88E8F5EFD0F46 /* TDBService.swift */,
+				F9E05243F404BEDC04D28F0B9A0A709C /* TDDBServiceApi.swift */,
+				372E00AB1C181A51118757341D97EA02 /* TDDBServiceApi+UserDefaults.swift */,
+				65BD7778F53857C2693C4768BA542389 /* TDDBServiceConfigurator.swift */,
+				6F7909771C66BF1B8651701E3F5F84FA /* TDDBServiceDataModel.swift */,
 				63782A56C47369A32DAC7B66CA63A1F0 /* TDResult.swift */,
 				E66428034DC8853C44FE19636B528B8D /* Support Files */,
 			);
@@ -352,11 +352,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				994021893FFCC05AC4413C62B8DCA051 /* DBServiceAble.swift in Sources */,
-				077DA71178FDC13B08487C56AB7D4D8E /* DBServiceApi+UserDefaults.swift in Sources */,
-				F65A2DBD73ACED2ECCF0B6A53BFBEB4F /* DBServiceApi.swift in Sources */,
-				A09321F628534B5C641B4538FFCBEA05 /* DBServiceConfigurator.swift in Sources */,
-				BA3734D8BCABC45AC520010706E3E3A5 /* DBServiceDataModel.swift in Sources */,
+				994021893FFCC05AC4413C62B8DCA051 /* TDBService.swift in Sources */,
+				077DA71178FDC13B08487C56AB7D4D8E /* TDDBServiceApi+UserDefaults.swift in Sources */,
+				F65A2DBD73ACED2ECCF0B6A53BFBEB4F /* TDDBServiceApi.swift in Sources */,
+				A09321F628534B5C641B4538FFCBEA05 /* TDDBServiceConfigurator.swift in Sources */,
+				BA3734D8BCABC45AC520010706E3E3A5 /* TDDBServiceDataModel.swift in Sources */,
 				D67FF89A865B4FEB635C2B52D804083B /* TDDBService-dummy.m in Sources */,
 				F46456BEEC14820837CFE042D79D7BCE /* TDResult.swift in Sources */,
 			);
