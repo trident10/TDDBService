@@ -18,10 +18,23 @@ public protocol TDDBEntity {
 }
 extension String: TDDBEntity{}
 
-public protocol TDDBServiceAbleObject{
+public protocol TDDBData{
+}
+
+public struct TDDBResponse{
+    public var resultData: TDDBData?
+    public var request: TDDBServiceRequest?
+    
+    public init(request: TDDBServiceRequest?, data: TDDBData?) {
+        self.request = request
+        self.resultData = data
+    }
+    
 }
 
 enum TDDBServiceError: Error {
+    case noRecordFound
+    case invalidEntityType
     case insertionFailed
     case requestGenerationFailed
 }
@@ -36,13 +49,14 @@ public struct TDDBSortDescriptor {
     }
 }
 
-public typealias TDDBFetchCompletionClosure = (TDResult<TDDBServiceAbleObject?, TDError>) -> Void
+public typealias TDDBFetchCompletionClosure = ((TDResult<TDDBResponse, TDError>) -> Void)
 
 
 public struct TDDBServiceRequest{
     public var methodType: TDDBMethodType = .fetch
     public var entity: TDDBEntity?
-    public var data: TDDBServiceAbleObject?
+    public var data: TDDBData?
     public var sortDescriptor: [TDDBSortDescriptor]?
     public var predicate: NSPredicate?
+    public var queue: DispatchQueue = DispatchQueue.global(qos: .background)
 }

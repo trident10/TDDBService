@@ -8,17 +8,17 @@
 import Foundation
 
 public protocol TDDBServiceConfigurator{
-    var dataSource: TDBService? {set get}
-    func createRequest(_ data:TDDBServiceAbleObject?, methodType: TDDBMethodType, predicate: NSPredicate?, sortDescriptor: [TDDBSortDescriptor]?) -> TDResult<TDDBServiceRequest, TDError>
+    var dataSource: TDDBService? {set get}
+    func createRequest(_ data: TDDBData?, methodType: TDDBMethodType, predicate: NSPredicate?, sortDescriptor: [TDDBSortDescriptor]?, queue: DispatchQueue) -> TDResult<TDDBServiceRequest, TDError>
 }
 
-public struct DBServiceConfiguratorClient: TDDBServiceConfigurator{
+public struct TDDBServiceConfiguratorClient: TDDBServiceConfigurator{
     
     public init(){}
     
-    public weak var dataSource: TDBService?
+    public weak var dataSource: TDDBService?
     
-    public func createRequest(_ data:TDDBServiceAbleObject?, methodType: TDDBMethodType, predicate: NSPredicate?, sortDescriptor: [TDDBSortDescriptor]?) -> TDResult<TDDBServiceRequest, TDError>{
+    public func createRequest(_ data: TDDBData?, methodType: TDDBMethodType, predicate: NSPredicate?, sortDescriptor: [TDDBSortDescriptor]?, queue: DispatchQueue) -> TDResult<TDDBServiceRequest, TDError>{
         if dataSource == nil{
             return TDResult.Error(TDError.init(TDDBServiceError.requestGenerationFailed, code: nil, description: "DBServiceConfiguratorClient dataSource not assigned"))
         }
@@ -32,6 +32,7 @@ public struct DBServiceConfiguratorClient: TDDBServiceConfigurator{
         request.methodType = methodType
         request.predicate = predicate
         request.sortDescriptor = sortDescriptor
+        request.queue = queue
         return TDResult.init(value: request)
     }
     

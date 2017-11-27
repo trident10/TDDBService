@@ -9,6 +9,5 @@ import Foundation
 
 public protocol TDDBServiceApi{
     var request: TDDBServiceRequest? {get set}
-    var response: AnyObject? {get set}
     func call(_ request: TDDBServiceRequest, completionHandler: @escaping TDDBFetchCompletionClosure)
 }

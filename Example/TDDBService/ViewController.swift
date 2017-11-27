@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     var test: Test = Test()
     override func viewDidLoad() {
         super.viewDidLoad()
+        var testData :NSString = "Test"
         
-        test.call(data: nil, methodType: .insert, predicate: nil, sortDescriptor: nil) { (result) in
+        test.call(data: testData, methodType: .fetch, predicate: nil, sortDescriptor: nil) { (result) in
             
         }
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,25 +29,28 @@ class ViewController: UIViewController {
 
 }
 
-struct User: TDDBServiceAbleObject{
+struct User: TDDBData{
     
 }
 
+extension User: TDDBEntity{}
 
 
-class Test: TDBService{
+
+class Test: TDDBService{
+    
     func apiClient() -> TDDBServiceApi {
-        return DBServiceApiUserDefaults()
+        return TDDBServiceApiUserDefaults()
     }
     
     func entityType() -> TDDBEntity {
         return "Test"
     }
     
-    func call(data:Dictionary<String, AnyObject>?, methodType: TDDBMethodType, predicate: NSPredicate?, sortDescriptor: [TDDBSortDescriptor]?, completion:((TDResult<User, TDError>)-> Void)?){
-        
-        apiCall(data, methodType: methodType, predicate: predicate, sortDescriptor: sortDescriptor) { (result) in
-            
+    func call(data:NSString, methodType: TDDBMethodType, predicate: NSPredicate?, sortDescriptor: [TDDBSortDescriptor]?, completion:((TDResult<User, TDError>)-> Void)?){
+        apiCall(data, methodType: methodType, predicate: predicate, sortDescriptor: sortDescriptor, queue: DispatchQueue.global()) { (response) in
+            print(response)
+
         }
     }
     
