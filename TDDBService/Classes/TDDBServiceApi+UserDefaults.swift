@@ -8,6 +8,8 @@
 import Foundation
 import TDResult
 
+extension String: TDDBEntity{}
+
 extension Dictionary: TDDBData{}
 extension NSDictionary: TDDBData{}
 extension Array: TDDBData{}

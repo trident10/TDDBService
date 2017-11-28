@@ -16,7 +16,6 @@ public enum TDDBMethodType {
 
 public protocol TDDBEntity {
 }
-extension String: TDDBEntity{}
 
 public protocol TDDBData{
 }
