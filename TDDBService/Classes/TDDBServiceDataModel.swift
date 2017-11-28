@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import TDResult
 public enum TDDBMethodType {
     case fetch
     case insert

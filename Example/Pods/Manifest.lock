@@ -1,5 +1,7 @@
 PODS:
-  - TDDBService (0.1.0)
+  - TDDBService (0.1.1):
+    - TDResult
+  - TDResult (0.1.1)
 
 DEPENDENCIES:
   - TDDBService (from `../`)
@@ -9,7 +11,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TDDBService: a7761a17140818c7b78626086c432361a2fea089
+  TDDBService: 301e19217d550fb26fbbfcf8aa6f3a9db830da17
+  TDResult: 8073c47dc4c99174490bce7a35a782ea97ac3c88
 
 PODFILE CHECKSUM: af39358540d0a6479b5dc40822ecd5c199c373ec
 

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import TDResult
 
 extension Dictionary: TDDBData{}
 extension NSDictionary: TDDBData{}

@@ -323,10 +323,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TDDBService_Example/Pods-TDDBService_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/TDDBService/TDDBService.framework",
+				"${BUILT_PRODUCTS_DIR}/TDResult/TDResult.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TDDBService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TDResult.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

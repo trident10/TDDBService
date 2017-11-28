@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import TDResult
 
 public protocol TDDBServiceConfigurator{
     var dataSource: TDDBService? {set get}

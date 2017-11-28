@@ -1,7 +1,7 @@
 {
   "name": "TDDBService",
-  "version": "0.1.0",
-  "summary": "A short description of TDDBService.",
+  "version": "0.1.1",
+  "summary": "A generic structure for DBService",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/trident10/TDDBService",
   "license": {
@@ -13,10 +13,15 @@
   },
   "source": {
     "git": "https://github.com/trident10/TDDBService.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "TDDBService/Classes/**/*"
+  "source_files": "TDDBService/Classes/**/*",
+  "dependencies": {
+    "TDResult": [
+
+    ]
+  }
 }

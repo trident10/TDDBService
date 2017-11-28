@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import TDResult
 
 public protocol TDDBService: class {
     func apiClient() -> TDDBServiceApi
