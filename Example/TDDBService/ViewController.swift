@@ -35,17 +35,17 @@ struct User: TDDBData{
 }
 
 extension User: TDDBEntity{}
-
+extension NSString: TDDBData{}
 
 
 class Test: TDDBService{
     
     func apiClient() -> TDDBServiceApi {
-        return TDDBServiceApiUserDefaults()
+        return TDDBServiceApiDefault()
     }
     
     func entityType() -> TDDBEntity {
-        return "Test"
+        return User()
     }
     
     func call(data:NSString, methodType: TDDBMethodType, predicate: NSPredicate?, sortDescriptor: [TDDBSortDescriptor]?, completion:((TDResult<User, TDError>)-> Void)?){

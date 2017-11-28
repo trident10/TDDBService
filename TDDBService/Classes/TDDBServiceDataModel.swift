@@ -7,6 +7,7 @@
 
 import Foundation
 import TDResult
+
 public enum TDDBMethodType {
     case fetch
     case insert
@@ -31,16 +32,17 @@ public struct TDDBResponse{
     
 }
 
-enum TDDBServiceError: Error {
+public enum TDDBServiceError: Error {
     case noRecordFound
     case invalidEntityType
     case insertionFailed
     case requestGenerationFailed
+    case invalidApi
 }
 
 public struct TDDBSortDescriptor {
-    let key: String
-    let ascending: Bool
+    public let key: String
+    public let ascending: Bool
     
     public init(key: String, ascending: Bool = true) {
         self.key = key
